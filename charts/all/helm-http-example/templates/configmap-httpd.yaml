@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: configmap-http
-  namespace: kustomize-http-example
+  namespace: {{ .Release.namespace }}
   labels:
     app.kubernetes.io/instance: helm-example
 data:

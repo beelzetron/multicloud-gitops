@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: http-port
-  namespace: kustomize-http-example
+  namespace: {{ .Release.namespace }}
   labels:
     app: httpd-frontend
 spec:

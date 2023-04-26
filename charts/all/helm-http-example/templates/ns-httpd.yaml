@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    kubernetes.io/metadata.name: kustomize-http-example
-  name: kustomize-http-example
+    kubernetes.io/metadata.name: {{ .Release.namespace }}
+  name: {{ .Release.namespace }}
 spec:
   finalizers:
   - kubernetes

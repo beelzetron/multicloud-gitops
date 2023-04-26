@@ -6,7 +6,7 @@ metadata:
     app: httpd-frontend
   managedFields:
   name: http-port
-  namespace: kustomize-http-example
+  namespace: {{ .Release.namespace }}
 spec:
   port:
     targetPort: http-port
