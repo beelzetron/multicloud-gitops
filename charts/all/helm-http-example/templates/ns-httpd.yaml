@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    kubernetes.io/metadata.name: {{ .Release.namespace }}
-  name: {{ .Release.namespace }}
+    kubernetes.io/metadata.name: helm-http-example
+  name: helm-http-example
 spec:
   finalizers:
   - kubernetes
