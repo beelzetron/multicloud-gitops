@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     application: hello-world
+    argocd.argoproj.io/sync-wave: "1"
   name: hello-world
 spec:
   replicas: 3

@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: hello-world
+    argocd.argoproj.io/sync-wave: "2"
   name: hello-world
 spec:
   ports:
